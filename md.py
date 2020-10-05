@@ -11,7 +11,7 @@ def calcenergy(a):
     ekin = a.get_kinetic_energy() / len(a)
     T = ekin / (1.5 * units.kB)
     etot = ekin + epot
-    return(epot, ekin, T, etot)
+    return(epot, ekin, etot, T)
 
 def run_md():
     # Use Asap for a huge performance increase if it is installed
